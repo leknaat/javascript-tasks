@@ -32,7 +32,8 @@ firstName.length;
 
 
 // creating the array of people and then printing to console
-var people = ['Jack', 'John', 'James'];
+var array = ['Jack', 'John', 'James'];
+var people = array.join("\n");
 console.log(people);
 
 
