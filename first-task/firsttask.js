@@ -46,3 +46,9 @@ removeFirstLetter("Richard");
 
 /* function which returns the name without the first character, 
    but only if the name starts with a 'J' */
+function onlyifJ(name) {
+	console.log(name.replace('J', ""));
+}
+// testing both Richard and John to ensure it's only removing J's
+onlyifJ("Richard");
+onlyifJ("John");
