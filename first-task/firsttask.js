@@ -47,20 +47,24 @@ removeFirstLetter("Richard");
 
 /* function which returns the name without the first character, 
    but only if the name starts with a 'J' */
-function onlyifJ(name) {
+function onlyIfJ(name) {
+	if (name.charAt(0) == "J") {
 	console.log(name.replace('J', ""));
-}
+	} else {
+		console.log(name);
+	}
+};
 // testing both Richard and John to ensure it's only removing J's
 console.log("J test. Passing Richard to ensure it's working as intended.");
-onlyifJ("Richard");
-onlyifJ("John");
+onlyIfJ("Richard");
+onlyIfJ("John");
 
 
 
 /* function which takes a name and returns the name without the first character, 
    but only if the name starts with a 'J'. 
    If the name starts with an 'R' remove the last two characters. */
- function jandR(name) {
+ function jAndR(name) {
  	if (name.charAt(0) == "J") {
  			console.log(name.replace('J', ""));
  	} else if (name.charAt(0) == "R") {
@@ -72,6 +76,6 @@ onlyifJ("John");
  
  // amd we test here
 console.log("Tricky! Testing to ensure it removes the J in john, last two characters if R, and doesn't touch any other names.");
-jandR("John");
-jandR("Richard");
-jandR("Kayla");
+jAndR("John");
+jAndR("Richard");
+jAndR("Kayla");
