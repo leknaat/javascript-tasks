@@ -9,8 +9,8 @@ console.log(firstName + " " + lastName);
 
 
 
-// setting up functions to print to the console
-// i could have made them variables but i wasn't sure if i 'should'
+/* setting up functions to print to the console
+   i could have made them variables but i wasn't sure if i 'should' */
 function firstNameLastName(firstName, lastName) {
 	console.log(firstName + " " + lastName);
 };
@@ -37,3 +37,12 @@ console.log(people);
 
 
 // function which take a name and returns it without the first character
+function removeFirstLetter(name) {
+	console.log(name.substring(1));
+};
+removeFirstLetter("Richard");
+
+
+
+/* function which returns the name without the first character, 
+   but only if the name starts with a 'J' */
