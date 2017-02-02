@@ -70,7 +70,7 @@ onlyifJ("John");
  };
  
  // amd we test here
- console.log("Tricky! Testing to ensure it removes the J in john, last two characters if R, and doesn't touch any other names.");
+console.log("Tricky! Testing to ensure it removes the J in john, last two characters if R, and doesn't touch any other names.");
 jandR("John");
 jandR("Richard");
 jandR("Kayla");
